@@ -16,22 +16,44 @@
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
+		<!-- HEADER -->
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 navbarTop px-5 py-1">
 					<img src="../images/839987 1 (1).png" class="img-fluid" />
-					<div class="px-4 mx-3" style="display: flex">
+					<div class="px-4 mx-3 ObrasDemo">
 						<p>Obras</p>
-
 						<p>- DEMO</p>
+					</div>
+					<div class="userName px-5">
+						<p>Usuario</p>
+						<p id="username">Usuario</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg px-5 py-3">
+		<!-- HEADER -->
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg px-5 py-2">
 			<div class="container-fluid">
 				<button
-					class="navbar-toggler"
+					style="
+						color: transparent;
+						background: transparent;
+						border: none;
+						margin-bottom: 4em;
+					"
+					class="navbar-toggler mx-4 mb-2"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				></button>
+				<button
+					class="navbar-toggler btnNav mx-4 mb-2"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent"
@@ -41,8 +63,9 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
+
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<ul class="navbar-nav mb-2 mb-lg-0">
 						<li class="nav-item dropdown mx-2">
 							<a
 								class="nav-link dropdown-toggle BTN px-4"
@@ -215,41 +238,22 @@
 												Moneda Extranjera
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
+												<li><a class="dropdown-item" href="#">Saldo</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#"
+														>Movimiento de caja</a
+													>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
+												<li>
+													<a class="dropdown-item" href="#"
+														>Cartera de cheques</a
 													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
 												</li>
 											</ul>
 										</li>
@@ -267,41 +271,12 @@
 												Compra de M_ extranjera
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
-												<li>
-													<a class="dropdown-item" href="#">Another action</a>
-												</li>
+												<li><a class="dropdown-item" href="#">Comprar</a></li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
+												<li>
+													<a class="dropdown-item" href="#">Listar compras</a>
 												</li>
 											</ul>
 										</li>
@@ -319,41 +294,12 @@
 												Venta de M_ extranjera
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
-												<li>
-													<a class="dropdown-item" href="#">Another action</a>
-												</li>
+												<li><a class="dropdown-item" href="#">Vender</a></li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
+												<li>
+													<a class="dropdown-item" href="#">Listar ventas</a>
 												</li>
 											</ul>
 										</li>
@@ -398,13 +344,6 @@
 												Depósitos
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
-												<li>
-													<a class="dropdown-item" href="#">Another action</a>
-												</li>
-												<li>
-													<hr class="dropdown-divider" />
-												</li>
 												<li class="nav-item dropend">
 													<a
 														class="nav-link dropdown-toggle"
@@ -413,28 +352,30 @@
 														data-bs-toggle="dropdown"
 														aria-expanded="false"
 													>
-														Dropdown
+														Depositar
 													</a>
 													<ul class="dropdown-menu">
 														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
+															<a class="dropdown-item" href="#">Efectivo</a>
 														</li>
 														<li>
 															<hr class="dropdown-divider" />
 														</li>
 														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
+															<a class="dropdown-item" href="#">Valores</a>
 														</li>
 													</ul>
 												</li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Listar depósitos</a>
+												</li>
 											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
 										</li>
 										<li class="nav-item dropend">
 											<a
@@ -447,43 +388,19 @@
 												Cheques/Extracciones
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Emitir cheques</a>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
+												<li>
+													<a class="dropdown-item" href="#">Listar cheques</a>
 												</li>
 											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
 										</li>
 										<li class="nav-item dropend">
 											<a
@@ -496,46 +413,29 @@
 												Transferencias
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#"
+														>Efectuar transferencia</a
+													>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
+												<li>
+													<a class="dropdown-item" href="#"
+														>Listar transferencias</a
 													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
 												</li>
 											</ul>
 										</li>
 										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
 											<a class="dropdown-item" href="#">Débitos varios</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
 										</li>
 										<li class="nav-item dropend">
 											<a
@@ -548,41 +448,16 @@
 												Saldos
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Saldo de bancos</a>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
+												<li>
+													<a class="dropdown-item" href="#"
+														>Movimiento de cuenta</a
 													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
 												</li>
 											</ul>
 										</li>
@@ -602,9 +477,20 @@
 										Gastos generales
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
 										<li>
-											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Agregar Factura</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Factura</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Pagos</a>
 										</li>
 										<li>
 											<hr class="dropdown-divider" />
@@ -617,12 +503,23 @@
 												data-bs-toggle="dropdown"
 												aria-expanded="false"
 											>
-												Dropdown
+												Informes
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
+												<li><a class="dropdown-item" href="#">General</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#"
+														>Por centro de costo</a
+													>
+												</li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Por cuenta</a>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
@@ -635,26 +532,61 @@
 														data-bs-toggle="dropdown"
 														aria-expanded="false"
 													>
-														Dropdown
+														Informes anuales
 													</a>
 													<ul class="dropdown-menu">
 														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
+															<a class="dropdown-item" href="#">Real</a>
 														</li>
 														<li>
 															<hr class="dropdown-divider" />
 														</li>
 														<li>
 															<a class="dropdown-item" href="#"
-																>Something else here</a
+																>Proyectado - real</a
 															>
 														</li>
 													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li class="nav-item dropend">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												Saldos
+											</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">General</a></li>
+
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#"
+														>Por centro de costo</a
+													>
+												</li>
+
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Por cuenta</a>
+												</li>
+
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Por subcuenta</a>
 												</li>
 											</ul>
 										</li>
@@ -674,13 +606,6 @@
 										Impuestos
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Another action</a>
-										</li>
-										<li>
-											<hr class="dropdown-divider" />
-										</li>
 										<li class="nav-item dropend">
 											<a
 												class="nav-link dropdown-toggle"
@@ -689,46 +614,31 @@
 												data-bs-toggle="dropdown"
 												aria-expanded="false"
 											>
-												Dropdown
+												Iva
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Posición Iva</a>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
+												<li>
+													<a class="dropdown-item" href="#">Compras</a>
+												</li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Retenciones</a>
 												</li>
 											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ingresos brutos</a>
 										</li>
 									</ul>
 								</li>
@@ -746,61 +656,8 @@
 										Gestión
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
 										<li>
-											<a class="dropdown-item" href="#">Another action</a>
-										</li>
-										<li>
-											<hr class="dropdown-divider" />
-										</li>
-										<li class="nav-item dropend">
-											<a
-												class="nav-link dropdown-toggle"
-												href="#"
-												role="button"
-												data-bs-toggle="dropdown"
-												aria-expanded="false"
-											>
-												Dropdown
-											</a>
-											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
-												<li>
-													<a class="dropdown-item" href="#">Another action</a>
-												</li>
-												<li>
-													<hr class="dropdown-divider" />
-												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
-												</li>
-											</ul>
+											<a class="dropdown-item" href="#">Reporte económico</a>
 										</li>
 									</ul>
 								</li>
@@ -814,11 +671,49 @@
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								Empresas
+								Proyectos
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Materiales
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de compra</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de pago</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Débitos internos</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Facturas</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Pagos</a>
+										</li>
+									</ul>
+								</li>
 								<li>
 									<hr class="dropdown-divider" />
 								</li>
@@ -830,12 +725,145 @@
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
 									>
-										Dropdown
+										Mano de obra
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
 										<li>
-											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Ordénes de compra</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de pago</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Certificados</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Pagos</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Planilla de carga</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Subcontratos
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de compra</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de pago</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Certificados</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Pagos</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Costos indirectos
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de compra</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ordénes de pago</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Facturas</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Pagos</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Informes
+									</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item dropend">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												General
+											</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Económico</a></li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Financiero</a>
+												</li>
+											</ul>
 										</li>
 										<li>
 											<hr class="dropdown-divider" />
@@ -848,46 +876,184 @@
 												data-bs-toggle="dropdown"
 												aria-expanded="false"
 											>
-												Dropdown
+												Por obra
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
+												<li><a class="dropdown-item" href="#">Económico</a></li>
 												<li>
-													<a class="dropdown-item" href="#">Another action</a>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Financiero</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Saldos de...
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Obras</a></li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Proveedores</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Movimiento de...
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Proveedores</a></li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Control de gestión
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Producción</a></li>
+
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li class="nav-item dropend">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												Avance de obra
+											</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">General </a></li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Por obra</a>
 												</li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
+												<li>
+													<a class="dropdown-item" href="#">Avance mensual</a>
 												</li>
 											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Situación de obra</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li class="nav-item dropend">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												Proyección
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="#"
+														>Proyección general</a
+													>
+												</li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#"
+														>Proyeccion por obra</a
+													>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Ingresos y egresos por obra</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Economía
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#">situación de ventas</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">situación de compras</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Resultado por obra</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Cash flow</a>
 										</li>
 									</ul>
 								</li>
@@ -901,11 +1067,15 @@
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								Empresas
+								Gestión de materiales
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Administrador de materiales</a
+									>
+								</li>
+
 								<li>
 									<hr class="dropdown-divider" />
 								</li>
@@ -917,12 +1087,51 @@
 										data-bs-toggle="dropdown"
 										aria-expanded="false"
 									>
-										Dropdown
+										Acopios
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Listar </a></li>
 										<li>
-											<a class="dropdown-item" href="#">Another action</a>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Agregar</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Remitos
+									</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item dropend">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												De proveedores
+											</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Listar</a></li>
+												<li>
+													<hr class="dropdown-divider" />
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Agregar remito</a>
+												</li>
+											</ul>
 										</li>
 										<li>
 											<hr class="dropdown-divider" />
@@ -935,46 +1144,44 @@
 												data-bs-toggle="dropdown"
 												aria-expanded="false"
 											>
-												Dropdown
+												Internos
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="#">Action</a></li>
-												<li>
-													<a class="dropdown-item" href="#">Another action</a>
-												</li>
+												<li><a class="dropdown-item" href="#">Listar</a></li>
 												<li>
 													<hr class="dropdown-divider" />
 												</li>
-												<li class="nav-item dropend">
-													<a
-														class="nav-link dropdown-toggle"
-														href="#"
-														role="button"
-														data-bs-toggle="dropdown"
-														aria-expanded="false"
-													>
-														Dropdown
-													</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a class="dropdown-item" href="#">Action</a>
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Another action</a
-															>
-														</li>
-														<li>
-															<hr class="dropdown-divider" />
-														</li>
-														<li>
-															<a class="dropdown-item" href="#"
-																>Something else here</a
-															>
-														</li>
-													</ul>
+												<li>
+													<a class="dropdown-item" href="#">Agregar</a>
 												</li>
 											</ul>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li><a class="dropdown-item" href="#">Informes</a></li>
+									</ul>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li class="nav-item dropend">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Consumos
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Listar</a></li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Agregar</a>
 										</li>
 									</ul>
 								</li>
@@ -984,6 +1191,134 @@
 				</div>
 			</div>
 		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<div class="container-fluid h-100">
+			<div class="row h-100">
+				<div class="col-lg-2 col-12 text-start sideBar pt-2">
+					<div class="toolBox py-1 pt-2" onclick="openModal('clientesModal')">
+						<i class="fa-solid fa-people-line icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Clientes
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-folder icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Proveedores
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-building icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Entidades Financieras
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-chart-simple icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Gastos Generales
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-house icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Proyectos
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-sitemap icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Rubros Directos
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-compass icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Rubros Indirectos
+						</p>
+					</div>
+					<hr class="mb-0 mt-0" />
+					<div class="toolBox py-1 pt-2">
+						<i class="fa-solid fa-screwdriver-wrench icon"></i>
+						<p class="mt-3 px-3">
+							<i class="fa-solid fa-circle dot"></i>
+							Materiales
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-10 col-12 text-center">
+					<h1 class="mt-5">DEMO</h1>
+				</div>
+			</div>
+		</div>
+		<!-- MAIN -->
+
+		<!-- MODAL CLIENTES -->
+		<div class="modalCont" id="clientesModal">
+			<div class="container modalBody">
+				<div class="row">
+					<div class="col-12 modalTitle px-4">
+						<p style="position: relative; bottom: -0.6em">
+							<i class="fa-solid fa-circle mx-1 modalDot"></i>
+							Administrador de Clientes
+						</p>
+						<i
+							onclick="closeModal()"
+							class="fa-solid fa-xmark m-4 mt-2"
+							style="
+								position: absolute;
+								right: 0;
+								top: 0;
+								font-size: 2rem;
+								cursor: pointer;
+							"
+						></i>
+					</div>
+					<div class="col-12 mt-1 pt-0 px-4">
+						<div
+							style="
+								font-size: 0.8rem;
+								display: flex;
+								position: relative;
+								bottom: -0.45em;
+							"
+						>
+							<p class="toolBox py-1 px-2">
+								<i class="fa-solid fa-plus mx-1 modalIcon"></i>Agregar Cliente
+							</p>
+							<p class="toolBox mx-3 py-1 px-2">
+								<i class="fa-solid fa-pen mx-1"></i>
+								Modificar Cliente
+							</p>
+							<p class="toolBox mx-3 py-1 px-2">
+								<i class="fa-solid fa-print mx-1"></i>
+								Imprimir
+							</p>
+							<p class="toolBox mx-3 py-1 px-2">
+								<i class="fa-solid fa-file-excel mx-1"></i>
+								Descargar
+							</p>
+						</div>
+						<hr class="mt-0 pt-0" />
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
